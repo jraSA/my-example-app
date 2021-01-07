@@ -1,6 +1,7 @@
 import React from 'react';
-import { Text, Card, BaseTheme } from 'ui-example-library';
+import { Text, Card } from 'ui-example-library';
 import { myHelloWorldFunction } from 'core-example-library';
+import { AppContainer } from './App.styles';
 
 interface Props {
 
@@ -8,11 +9,11 @@ interface Props {
 
 const App = (props: Props) => {
   return (
-    <div style={{ marginTop: BaseTheme.space[6] }}>
+    <AppContainer>
       <Card>
         <Text value={myHelloWorldFunction('Jorge')} />
       </Card>
-    </div>
+    </AppContainer >
   )
 }
 
