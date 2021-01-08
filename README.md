@@ -8,6 +8,7 @@
 - [Running tests](#running_test)
 - [Publishing](#publishing)
 - [Running](#running)
+- [GH Page](#jGHPage)
 
 ## About <a name = "about"></a>
 A very simple **hello world** app that could work as an example of how to decouple logic and ui, as a very basic pattern for a  **Design System**. 
@@ -21,7 +22,7 @@ The idea behind this is to have two separated modules, **UI** and **Core**. The 
 ### UI
 The **UI** module provides two things, a basic set of **components** and a **BaseTheme** based on <a href="https://system-ui.com/">System UI</a> with an utility function to simplify the use of the theme inside of the **Styled Components**. 
 
-The idea behind that **BaseTheme** is to stablish a common **Design Language** across all the components which is a basic thing in order to build a **Design System**. The **BaseTheme** is also the base for the app theme, obtaining in that way a consistent design across the **app** and **components**.
+The idea behind that **BaseTheme** is to stablish a common **Design Language** across all the components which is a basic thing in order to build a **Design System**. The **BaseTheme** is also the base for the **App Theme**, obtaining in that way a consistent design across the **app** and **components**.
 
 Another point to have in mind is that the components use **TypeScript generic types**, in that way you can have a consistent use of the types without knowing what is going to be returned by the core.
 
@@ -44,3 +45,7 @@ npm run deploy
 ```
 npm run start
 ```
+## GH Page <a name = "GHPage"></a>
+Here can you find a running example of this very simple app:
+
+https://jrasa.github.io/my-example-app/

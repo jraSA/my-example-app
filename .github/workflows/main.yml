@@ -1,4 +1,4 @@
-name: core-example-library pipeline
+name: my-example-app pipeline
 
 on:
   push:
