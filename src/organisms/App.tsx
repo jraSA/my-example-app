@@ -1,19 +1,29 @@
-import React from 'react';
-import { Text, Card } from 'ui-example-library';
-import { myHelloWorldFunction } from 'core-example-library';
+import React, { useState } from 'react';
+import { Card, List, Button } from 'ui-example-library';
+import { getAllFriends, Friend } from 'core-example-library';
 import { AppContainer } from './App.styles';
+import { ThemeProvider } from 'styled-components';
+import theme from '../theme/theme'
+import Hello from '../atoms/Hello';
 
-interface Props {
+const renderItem = (item: Friend) => <Hello name={item.name} />;
 
-}
+const App = () => {
+  const [showList, setshowList] = useState(false);
 
-const App = (props: Props) => {
+
   return (
-    <AppContainer>
-      <Card>
-        <Text value={myHelloWorldFunction('Jorge')} />
-      </Card>
-    </AppContainer >
+    <ThemeProvider theme={theme}>
+      <AppContainer>
+        <Card title={'My simple hello world App'}>
+          <Hello name={'Jorge'} />
+        </Card>
+        <Button onClick={() => { setshowList(!showList) }}>Say Hello to all!!</Button>
+        {showList &&
+          <List renderItem={renderItem} getData={getAllFriends} />
+        }
+      </AppContainer >
+    </ThemeProvider>
   )
 }
 
