@@ -1,4 +1,4 @@
-# core-example-library
+# my-example-app
 
 ![CI/CD](https://github.com/jraSA/my-example-app/workflows/my-example-app%20pipeline/badge.svg)
 ![License](https://img.shields.io/github/license/dyarleniber/react-workflow-gh-actions)
