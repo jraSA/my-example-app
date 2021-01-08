@@ -8,7 +8,7 @@
 - [Running tests](#running_test)
 - [Publishing](#publishing)
 - [Running](#running)
-- [GH Page](#jGHPage)
+- [GH Page](#GHPage)
 
 ## About <a name = "about"></a>
 A very simple **hello world** app that could work as an example of how to decouple logic and ui, as a very basic pattern for a  **Design System**. 
